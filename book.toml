@@ -1,0 +1,8 @@
+[book]
+title = "AER Beginner's Guide"
+authors = ["Anushree"]
+language = "en"
+src = "src"
+
+[output.html]
+additional-css = ["src/theme/custom.css"]
