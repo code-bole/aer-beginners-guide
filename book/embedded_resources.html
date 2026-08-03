@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-78177d5e.js";
+            window.path_to_searchindex_js = "searchindex-523c303d.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e9f2abea.js"></script>
@@ -176,42 +176,7 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="embedded-resources"><a class="header" href="#embedded-resources">Embedded Resources</a></h1>
-<h2 id="general-embedded-info"><a class="header" href="#general-embedded-info">General Embedded Info</a></h2>
-<ul>
-<li>
-<p>At the end of each quarter, we’re all required to update our embedded documentation for whatever we worked on in <a href="https://github.com/Anteater-Electric-Racing/aer-documentation">this repo</a></p>
-<ul>
-<li>
-<p>Great way to get in-depth knowledge of everything embedded (though it can be dense at times)</p>
-</li>
-<li>
-<p>We use Markdown to write this, and you can run it locally on your laptop to see the rendered changes</p>
-</li>
-<li>
-<p>To run the local rendered markdown page and develop first enter: <br>
-<code>curl https://sh.rustup.rs -sSf | sh in your terminal</code></p>
-</li>
-<li>
-<p>Install mdbook:
-<code>cargo install mdbook mdbook-mermaid</code></p>
-</li>
-<li>
-<p>Clone the aer-documentation repo (or whichever one we’re using at the time) and then run: <br>
-<code>git clone https://github.com/Anteater-Electric-Racing/aer-documentation</code> <br>
-<code>cd aer-documentation</code> <br>
-<code>mdbook serve</code></p>
-<ul>
-<li><strong>git clone</strong> → clones repo in git</li>
-<li><strong>cd</strong> → means “change directory” to aer-documentation (or whatever the name of the repo is)</li>
-</ul>
-</li>
-<li>
-<p>Go to <a href="http://localhost:3000/">http://localhost:3000/</a> to see the rendered changes</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="git-basics"><a class="header" href="#git-basics">Git Basics:</a></h2>
+<h2 id="git-basics"><a class="header" href="#git-basics">Git Basics</a></h2>
 <ul>
 <li>
 <p><a href="https://github.com/Anteater-Electric-Racing/embedded-mz">MZ repository</a></p>
@@ -227,6 +192,13 @@
 </li>
 <li>
 <p><strong>Repository (repo)</strong>: think of it like a container to store all of our car related files</p>
+<ul>
+<li><strong>Cloning a repository</strong>: when you want to make changes to a repository in an IDE, you’ll have to make a copy of that repository on your personal device (hence, cloning)
+<ul>
+<li>This allows you to make changes locally (on your device) before you publish those changes to GitHub for your collaborators to see</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
 <p><strong>Branches</strong>: each repository has branches, and they allow you to make changes to code without changing the main source code</p>
@@ -261,6 +233,139 @@
 </li>
 <li>Add Anoop as a reviewer and assign yourself + your partner on the PR/task</li>
 <li>Make sure to fill out the PR according to the PR template (and include any photos/testing that you did for the task)</li>
+</ul>
+</li>
+</ul>
+<h2 id="github-and-vscode"><a class="header" href="#github-and-vscode">GitHub and VSCode</a></h2>
+<ul>
+<li>
+<p>Sign in to GitHub through VSCode</p>
+</li>
+<li>
+<p>Hit “Clone Git Repository” on the Welcome page and copy and paste over the HTTPS link from the repository itself</p>
+<p><img src="images/clone_repo.png" alt="clone repo"></p>
+</li>
+<li>
+<p>Select a destination to clone your repository locally (somewhere on your computer where you won’t lose it). Yay, now you have a local copy of that repository on your laptop and you can edit it freely!</p>
+</li>
+<li>
+<p>When you want to open that repo in VSCode, hit “File” and then “Open Folder” and open the folder associated with the cloned repository</p>
+<p><img src="images/file_open_folder.png" alt="file open folder"></p>
+</li>
+<li>
+<p>Now you’re ready to code! Feel free to make any code changes here, no one will be able to see them unless you push your changes to GitHub</p>
+</li>
+</ul>
+<h2 id="vscode-basics"><a class="header" href="#vscode-basics">VSCode Basics</a></h2>
+<ul>
+<li>
+<p>First step: open a cloned repository on your VSCode (see above section)</p>
+</li>
+<li>
+<p><strong>Switching or creating a new branch</strong>: In the bottom left corner, you should see the current branch that you’re on</p>
+<p><img src="images/switch_branches_1.png" alt="switch_branches_1"></p>
+<ul>
+<li>
+<p>If you click on the branch name, you’ll see a menu in the search bar that says “Select a branch or tag to checkout”</p>
+<p><img src="images/switch_branches_2.png" alt="switch_branches_2"></p>
+</li>
+<li>
+<p>Here, you can create a new branch or select one that you’ve already made (if creating, type the new branch’s name in the box)</p>
+<ul>
+<li>If you create a new brach and publish it on VSCode, you will see the changes reflected on GitHub as well</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Pushing and pulling changes</strong>:</p>
+<ul>
+<li>
+<p><strong>Pulling changes</strong>: click on the branch split with circles icon in the left sidebar</p>
+<ul>
+<li>
+<p>Hover over “Source Control: Changes” and click on the 3 dots to the right</p>
+</li>
+<li>
+<p>You’ll see multiple options here, but the two most important are “Fetch” and “Pull”:</p>
+<p><img src="images/source_control.png" alt="source_control"></p>
+</li>
+<li>
+<p>Use <strong>“Fetch”</strong> when:</p>
+<ul>
+<li>You want to see what new changes there are without automatically changing your files</li>
+<li>You have uncommitted work and don’t want to cause merge conflicts
+<ul>
+<li><strong>Merge conflict</strong>: occurs Git gets confused because two people changed the exact same lines of code, and doesn’t know which version to keep</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Use <strong>“Pull”</strong> when:</p>
+<ul>
+<li>You’re just starting work for the day and want the absolute latest code</li>
+<li>Warning: the “Pull” action will cause your files to be automatically updated with the latest code and could force you to deal with merge conflicts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Pushing/Commiting changes</strong>: In the same source control section, you’ll see an empty box that says “Message…”</p>
+<ul>
+<li>This box is for your <strong>commit message</strong>, which explains what changes you made and why you made them
+<ul>
+<li>Ex: Create initial AER beginner guide pages documentation, Add GitHub pages workflow</li>
+<li>Message is supposed to make it easier to see which changes are associated with which commit</li>
+</ul>
+</li>
+<li>When you’re done with your message, hit the “Commit” button, and then hit “Sync” to sync your changes to GitHub</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-create-a-pull-request"><a class="header" href="#how-to-create-a-pull-request">How to Create a Pull Request</a></h2>
+<ul>
+<li>
+<p>Make sure you are making your changes in a branch that is NOT main (you shouldn’t be able to push your changes to main anyways)</p>
+</li>
+<li>
+<p>Make any changes you want, and commit your changes to that branch</p>
+</li>
+</ul>
+<h2 id="general-embedded-info"><a class="header" href="#general-embedded-info">General Embedded Info</a></h2>
+<ul>
+<li>
+<p>At the end of each quarter, we’re all required to update our embedded documentation for whatever we worked on in <a href="https://github.com/Anteater-Electric-Racing/aer-documentation">this repo</a></p>
+<ul>
+<li>
+<p>Great way to get in-depth knowledge of everything embedded (though it can be dense at times)</p>
+</li>
+<li>
+<p>We use Markdown to write this, and you can run it locally on your laptop to see the rendered changes</p>
+</li>
+<li>
+<p>To run the local rendered markdown page and develop first enter: <br>
+<code>curl https://sh.rustup.rs -sSf | sh in your terminal</code></p>
+</li>
+<li>
+<p>Install mdbook:
+<code>cargo install mdbook mdbook-mermaid</code></p>
+</li>
+<li>
+<p>Clone the aer-documentation repo (or whichever one we’re using at the time) and then run: <br>
+<code>git clone https://github.com/Anteater-Electric-Racing/aer-documentation</code> <br>
+<code>cd aer-documentation</code> <br>
+<code>mdbook serve</code></p>
+<ul>
+<li><strong>git clone</strong> → clones repo in git</li>
+<li><strong>cd</strong> → means “change directory” to aer-documentation (or whatever the name of the repo is)</li>
+</ul>
+</li>
+<li>
+<p>Go to <a href="http://localhost:3000/">http://localhost:3000/</a> to see the rendered changes</p>
+</li>
 </ul>
 </li>
 </ul>

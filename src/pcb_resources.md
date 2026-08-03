@@ -1,16 +1,4 @@
-# General PCB Resources
-- I’ve heard good things about [this course by Altium](https://education.altium.com/p/unit-1-introduction-to-pcb-design)
-
-- [Good starter pcb video](https://www.youtube.com/watch?v=3FGNw28xBr0)
-
-- Use AI! It’s super helpful when learning the ropes
-
-- PCBs at AER are heavily tied to the embedded code, so it’s important to at least have a bit of background information on what the codebase looks like (not necessarily required, but I definitely found it helpful
-    - [Detailed documentation on everything embedded](https://github.com/Anteater-Electric-Racing/aer-documentation)
-    - Follow the README in the repo and run localhost to see the rendered markdown version of the documentation
-    - Read through any important parts of the documentation that relate back to the boards/how they work
-
-## Anushree's PCB Tips
+# Anushree's PCB Tips
 - Recommend just picking a board (RTM, BSPD, CCM, etc) and just diving right in → no better way to figure stuff out than looking through the schematic for yourself
     - Learn the acronyms for the boards and what they stand for (you’re going to be hearing them A LOT)
 
@@ -48,5 +36,15 @@
     - If you don’t understand something (no matter how small or seemingly insignificant), ask someone!
     - Remember, everyone has to start somewhere! :)
 
+## General PCB Resources
+- [Good starter pcb video](https://www.youtube.com/watch?v=3FGNw28xBr0)
+
+- Use AI! It’s super helpful when learning the ropes
+
+- PCBs at AER are heavily tied to the embedded code, so it’s important to at least have a bit of background information on what the codebase looks like (not necessarily required, but I definitely found it helpful)
+    - [Detailed documentation on everything embedded](https://github.com/Anteater-Electric-Racing/aer-documentation)
+    - Follow the README in the repo and run localhost to see the rendered markdown version of the documentation
+    - Read through any important parts of the documentation that relate back to the boards/how they work
+- If you have more time, I’ve heard good things about [this course by Altium](https://education.altium.com/p/unit-1-introduction-to-pcb-design)
 
 
