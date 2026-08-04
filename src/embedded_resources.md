@@ -61,11 +61,11 @@
         - Use **"Fetch"** when:
             - You want to see what new changes there are without automatically changing your files
             - You have uncommitted work and don't want to cause merge conflicts
-                - **Merge conflict**: occurs Git gets confused because two people changed the exact same lines of code, and doesn't know which version to keep
+                - **Merge conflict**: occurs when Git gets confused because two people changed the exact same lines of code, and doesn't know which version to keep
 
         - Use **"Pull"** when:
             - You're just starting work for the day and want the absolute latest code
-            - Warning: the "Pull" action will cause your files to be automatically updated with the latest code and could force you to deal with merge conflicts
+            - **Warning:** the "Pull" action will cause your files to be automatically updated with the latest code and could force you to deal with merge conflicts
 
     - **Pushing/Commiting changes**: In the same source control section, you'll see an empty box that says "Message..."
 
@@ -87,13 +87,13 @@
     ![create_pr](images/create_pr.png)
 
 - Fill out the PR according to the PR template (it should autopopulate, but if it doesn't just check the PULL_REQUEST_TEMPLATE file)
-    - Add Anoop as a reviewer and assign yourself + your partner on the PR/task
+    - Add the Embedded lead as a reviewer and assign yourself + your partner on the PR/task
 
-    - **Note: The picture shown below is a PR in a different repository (not associated with AER) so the PR template doesn't populate there**
+    - **Note: The picture shown below is a PR in the repository I used to create this guide, so the PR template doesn't populate there**
     
     ![write_pr](images/write_pr.png)
 
-    - Create the PR, and shoot a DM to Anoop about it
+    - Create the PR, and shoot a DM to the Embedded lead about it
 
     - Wait until you get comments or until your changes are merged into main
 
@@ -114,22 +114,22 @@
 
 7. Once your code is merged to main, delete your branch
 
-8. Celebrate!
+8. You did it, celebrate!
 
 
 ## General Embedded Info
 - At the end of each quarter, we’re all required to update our embedded documentation for whatever we worked on in [this repo](https://github.com/Anteater-Electric-Racing/aer-documentation)
 
-    - Great way to get in-depth knowledge of everything embedded (though it can be dense at times)
+    - It's a great way to get in-depth knowledge of everything embedded (though it can be dense at times)
 
     - We use Markdown to write this, and you can run it locally on your laptop to see the rendered changes
-    - To run the local rendered markdown page and develop first enter: <br>
-    ```curl https://sh.rustup.rs -sSf | sh in your terminal```
-    - Install mdbook:
+    - To run the local rendered markdown page and develop first enter: <br> <br>
+    ```curl https://sh.rustup.rs -sSf | sh ```
+    - Install mdbook: <br> <br>
     ```cargo install mdbook mdbook-mermaid```
-    - Clone the aer-documentation repo (or whichever one we’re using at the time) and then run: <br>
-    ```git clone https://github.com/Anteater-Electric-Racing/aer-documentation``` <br>
-    ```cd aer-documentation``` <br>
+    - Clone the aer-documentation repo (or whichever one we’re using at the time) and then run: <br> <br>
+    ```git clone https://github.com/Anteater-Electric-Racing/aer-documentation``` <br> <br>
+    ```cd aer-documentation``` <br> <br>
     ```mdbook serve```
         - **git clone** → clones repo in git
         - **cd** → means “change directory” to aer-documentation (or whatever the name of the repo is)

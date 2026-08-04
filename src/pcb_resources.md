@@ -1,4 +1,4 @@
-# PCB Tips
+# PCB Resources
 - I recommend just picking a board (RTM, BSPD, CCM, etc) and just diving right in → no better way to figure stuff out than looking through the schematic for yourself
     - Learn the acronyms for the boards and what they stand for (you’re going to be hearing them A LOT)
 
@@ -37,7 +37,7 @@
     - If you don’t understand something (no matter how small or seemingly insignificant), ask someone!
     - Remember, everyone has to start somewhere! :)
 
-## General PCB Resources
+## General Tips
 - [Good starter pcb video](https://www.youtube.com/watch?v=3FGNw28xBr0)
 
 - Use AI! It’s super helpful when learning the ropes

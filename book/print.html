@@ -37,7 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e131664f.js";
+            window.path_to_searchindex_js = "searchindex-656fc474.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e9f2abea.js"></script>
@@ -176,7 +176,7 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="anushrees-aer-resources"><a class="header" href="#anushrees-aer-resources">Anushree’s AER Resources</a></h1>
+                        <h1 id="aer-resources"><a class="header" href="#aer-resources">AER Resources</a></h1>
 <p align="center">
   <img src="images/aer_logo.png" alt="Anteater Electric Racing Logo" width="450">
 </p>
@@ -188,10 +188,10 @@
 <h3 id="about-me"><a class="header" href="#about-me">About Me</a></h3>
 <p>Hi! My name is Anushree Godbole, and I’m a Computer Engineering sophomore. This is going to be my second year at AER! I’m specifically part of the <strong>Electrical (PCB Design) team</strong> and the <strong>Embedded team</strong>.</p>
 <h3 id="why-i-made-this-guide"><a class="header" href="#why-i-made-this-guide">Why I Made This Guide</a></h3>
-<p>I’ve compiled some of my learnings here in order to help out new joinees! I came in not knowing much about both PCB design or Embedded work, so I know it can be quite overwhelming to learn at times. I’m hoping this will be a good resource to get you a head start.</p>
+<p>I’ve compiled some of my learnings here in order to help out new joinees! I came in not knowing much about both PCB design or Embedded work, so I know it can be quite overwhelming to learn at times. I’m hoping this will be a good resource to get you a head start!</p>
 <p>Happy reading! :)</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="anushrees-pcb-tips"><a class="header" href="#anushrees-pcb-tips">Anushree’s PCB Tips</a></h1>
+<h1 id="pcb-resources"><a class="header" href="#pcb-resources">PCB Resources</a></h1>
 <ul>
 <li>
 <p>I recommend just picking a board (RTM, BSPD, CCM, etc) and just diving right in → no better way to figure stuff out than looking through the schematic for yourself</p>
@@ -264,7 +264,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="general-pcb-resources"><a class="header" href="#general-pcb-resources">General PCB Resources</a></h2>
+<h2 id="general-tips"><a class="header" href="#general-tips">General Tips</a></h2>
 <ul>
 <li>
 <p><a href="https://www.youtube.com/watch?v=3FGNw28xBr0">Good starter pcb video</a></p>
@@ -411,7 +411,7 @@
 <li>You want to see what new changes there are without automatically changing your files</li>
 <li>You have uncommitted work and don’t want to cause merge conflicts
 <ul>
-<li><strong>Merge conflict</strong>: occurs Git gets confused because two people changed the exact same lines of code, and doesn’t know which version to keep</li>
+<li><strong>Merge conflict</strong>: occurs when Git gets confused because two people changed the exact same lines of code, and doesn’t know which version to keep</li>
 </ul>
 </li>
 </ul>
@@ -420,7 +420,7 @@
 <p>Use <strong>“Pull”</strong> when:</p>
 <ul>
 <li>You’re just starting work for the day and want the absolute latest code</li>
-<li>Warning: the “Pull” action will cause your files to be automatically updated with the latest code and could force you to deal with merge conflicts</li>
+<li><strong>Warning:</strong> the “Pull” action will cause your files to be automatically updated with the latest code and could force you to deal with merge conflicts</li>
 </ul>
 </li>
 </ul>
@@ -462,16 +462,16 @@
 <p>Fill out the PR according to the PR template (it should autopopulate, but if it doesn’t just check the PULL_REQUEST_TEMPLATE file)</p>
 <ul>
 <li>
-<p>Add Anoop as a reviewer and assign yourself + your partner on the PR/task</p>
+<p>Add the Embedded lead as a reviewer and assign yourself + your partner on the PR/task</p>
 </li>
 <li>
-<p><strong>Note: The picture shown below is a PR in a different repository (not associated with AER) so the PR template doesn’t populate there</strong></p>
+<p><strong>Note: The picture shown below is a PR in the repository I used to create this guide, so the PR template doesn’t populate there</strong></p>
 </li>
 </ul>
 <p><img src="images/write_pr.png" alt="write_pr"></p>
 <ul>
 <li>
-<p>Create the PR, and shoot a DM to Anoop about it</p>
+<p>Create the PR, and shoot a DM to the Embedded lead about it</p>
 </li>
 <li>
 <p>Wait until you get comments or until your changes are merged into main</p>
@@ -506,7 +506,7 @@
 <p>Once your code is merged to main, delete your branch</p>
 </li>
 <li>
-<p>Celebrate!</p>
+<p>You did it, celebrate!</p>
 </li>
 </ol>
 <h2 id="general-embedded-info"><a class="header" href="#general-embedded-info">General Embedded Info</a></h2>
@@ -515,23 +515,23 @@
 <p>At the end of each quarter, we’re all required to update our embedded documentation for whatever we worked on in <a href="https://github.com/Anteater-Electric-Racing/aer-documentation">this repo</a></p>
 <ul>
 <li>
-<p>Great way to get in-depth knowledge of everything embedded (though it can be dense at times)</p>
+<p>It’s a great way to get in-depth knowledge of everything embedded (though it can be dense at times)</p>
 </li>
 <li>
 <p>We use Markdown to write this, and you can run it locally on your laptop to see the rendered changes</p>
 </li>
 <li>
-<p>To run the local rendered markdown page and develop first enter: <br>
-<code>curl https://sh.rustup.rs -sSf | sh in your terminal</code></p>
+<p>To run the local rendered markdown page and develop first enter: <br> <br>
+<code>curl https://sh.rustup.rs -sSf | sh </code></p>
 </li>
 <li>
-<p>Install mdbook:
+<p>Install mdbook: <br> <br>
 <code>cargo install mdbook mdbook-mermaid</code></p>
 </li>
 <li>
-<p>Clone the aer-documentation repo (or whichever one we’re using at the time) and then run: <br>
-<code>git clone https://github.com/Anteater-Electric-Racing/aer-documentation</code> <br>
-<code>cd aer-documentation</code> <br>
+<p>Clone the aer-documentation repo (or whichever one we’re using at the time) and then run: <br> <br>
+<code>git clone https://github.com/Anteater-Electric-Racing/aer-documentation</code> <br> <br>
+<code>cd aer-documentation</code> <br> <br>
 <code>mdbook serve</code></p>
 <ul>
 <li><strong>git clone</strong> → clones repo in git</li>
