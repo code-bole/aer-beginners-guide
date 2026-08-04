@@ -77,7 +77,7 @@
 ## How to Make Code Changes and Create a Pull Request
 
 - Create a new branch with the naming format: FirstinitialLastinitial/task (if multiple names, hyphenate the initials)
-        - Ex: ag-dt/speaker
+    - Ex: ag-dt/speaker
 
 - Make sure you are making your changes in the branch you just created and NOT main (you shouldn't be able to push your changes to main anyways)
     - When you're done with all of your changes, make sure to commit. Now you're ready to open a Pull Request (PR)!
