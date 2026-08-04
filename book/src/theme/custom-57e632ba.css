@@ -9,6 +9,11 @@ h3 {
 li {
     font-size: 18px;
 }
+
 .sidebar .chapter {
     font-size: 25px;
+}
+
+img {
+    border: 2px solid #112b77;
 }

@@ -28,7 +28,7 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="src/theme/custom-03840ac2.css">
+        <link rel="stylesheet" href="src/theme/custom-57e632ba.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-523c303d.js";
+            window.path_to_searchindex_js = "searchindex-fe306939.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e9f2abea.js"></script>
@@ -178,7 +178,7 @@
                         <h1 id="anushrees-pcb-tips"><a class="header" href="#anushrees-pcb-tips">Anushree’s PCB Tips</a></h1>
 <ul>
 <li>
-<p>Recommend just picking a board (RTM, BSPD, CCM, etc) and just diving right in → no better way to figure stuff out than looking through the schematic for yourself</p>
+<p>I recommend just picking a board (RTM, BSPD, CCM, etc) and just diving right in → no better way to figure stuff out than looking through the schematic for yourself</p>
 <ul>
 <li>Learn the acronyms for the boards and what they stand for (you’re going to be hearing them A LOT)</li>
 </ul>
@@ -198,10 +198,13 @@
 </ul>
 </li>
 <li>
+<p>Remember, with AI: trust, but verify!</p>
+</li>
+<li>
 <p>Once you somewhat have a grasp on what your assigned/given board does, make a presentation on it (individually or with a partner)! Run through all parts of the schematic and explain its functions</p>
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1mx0g-cAfGusMjqLGmFd5wtbL-ejqtgY_k79ct8G-RjY/edit?usp=sharing">My example</a></li>
-<li>Once you have an idea of how the board works, make sure to read ALL of the rules related to how that system
+<li>Once you have an idea of how the board works, make sure to read ALL of the rules related to that system
 <ul>
 <li><a href="https://www.fsaeonline.com/cdsweb/gen/documentresources.aspx">Ruleset</a></li>
 <li>Understanding how the boards are rules compliant is super important to understanding why logic was implemented a certain way or why certain components were chosen</li>
@@ -211,7 +214,7 @@
 </ul>
 </li>
 <li>
-<p>Now that you’re confident on how your board works, it’s time to run through possible improvements. Make a presentation on ways you can possibly improve the given board</p>
+<p>Now that you’re confident on how your board works, it’s time to brainstorm possible improvements. Make a presentation on ways you can possibly improve the given board</p>
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1NY_Lc-AJDH_oXvvpEkqkMn0eifhq0QqDiTz7k-_WDgE/edit?usp=sharing">My example</a></li>
 </ul>
@@ -224,7 +227,7 @@
 </ul>
 </li>
 <li>
-<p>Look at old boards! → go to ECT/Kilozott and physically look at the old boards</p>
+<p>Look at old boards! → go to ECT/KiloZott and physically look at the old boards</p>
 <ul>
 <li>How are they harnessed together?</li>
 <li>How are they soldered? Are they through-hole or SMD? Why?
@@ -254,10 +257,25 @@
 <p>Use AI! It’s super helpful when learning the ropes</p>
 </li>
 <li>
+<p><strong>READ THE DATASHEETS!</strong></p>
+<ul>
+<li>Especially helpful when you’re making boards: you need to know the details of the parts you’re using</li>
+<li>They can tell you important information like:
+<ul>
+<li>Pinouts (Ex: On a MOSFET, which pin is the Gate, Drain, and Source)</li>
+<li>Recommended operating voltage and current</li>
+<li>Typical applications in circuits</li>
+<li>Other electrical characteristics</li>
+</ul>
+</li>
+<li>You don’t need to read the entire datasheet! Just start with the most relevant to what you’re working on</li>
+</ul>
+</li>
+<li>
 <p>PCBs at AER are heavily tied to the embedded code, so it’s important to at least have a bit of background information on what the codebase looks like (not necessarily required, but I definitely found it helpful)</p>
 <ul>
 <li><a href="https://github.com/Anteater-Electric-Racing/aer-documentation">Detailed documentation on everything embedded</a></li>
-<li>Follow the README in the repo and run localhost to see the rendered markdown version of the documentation</li>
+<li>Follow the README in the repo to run the documentation locally, then go to localhost to view the rendered documentation</li>
 <li>Read through any important parts of the documentation that relate back to the boards/how they work</li>
 </ul>
 </li>

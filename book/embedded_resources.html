@@ -28,7 +28,7 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="src/theme/custom-03840ac2.css">
+        <link rel="stylesheet" href="src/theme/custom-57e632ba.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-523c303d.js";
+            window.path_to_searchindex_js = "searchindex-fe306939.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e9f2abea.js"></script>
@@ -176,16 +176,18 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="embedded-resources"><a class="header" href="#embedded-resources">Embedded Resources</a></h1>
+<ul>
+<li>
+<h3 id="megazotts-embedded-repository"><a class="header" href="#megazotts-embedded-repository"><a href="https://github.com/Anteater-Electric-Racing/embedded-mz">MegaZott’s Embedded Repository</a></a></h3>
+</li>
+</ul>
 <h2 id="git-basics"><a class="header" href="#git-basics">Git Basics</a></h2>
 <ul>
 <li>
-<p><a href="https://github.com/Anteater-Electric-Racing/embedded-mz">MZ repository</a></p>
+<p><strong>Git</strong>: a version control system that tracks changes to code and allows multiple people to collaborate on the same project</p>
 </li>
 <li>
-<p><strong>Git</strong>: a version control design system that lets us collaborate on code</p>
-</li>
-<li>
-<p>We mainly use GitHub (which uses Git) to store all of our files</p>
+<p>We mainly use GitHub (which is built around Git) to store all of our files</p>
 <ul>
 <li>Allows us to see past changes, updated changes, and it’s easy to keep track of who changed what</li>
 </ul>
@@ -204,13 +206,13 @@
 <p><strong>Branches</strong>: each repository has branches, and they allow you to make changes to code without changing the main source code</p>
 <ul>
 <li>Each repo (by default) has a main branch, where the main source code is</li>
-<li>Every time you make a branch, the main source code is copied</li>
+<li>Each new branch starts from the current state of the branch it’s created from (usually main)</li>
 <li>You can make edits on the new branch and it won’t affect the code in the main branch, until you “merge” into main</li>
 <li>Importance of branches: lets you change code without directly affecting the main code base, and is more easily undoable</li>
 </ul>
 </li>
 <li>
-<p><strong>Pulling changes</strong>: allows you to “pull” changes from the repository and see the updates on your device</p>
+<p><strong>Pulling changes</strong>: downloads the latest changes from GitHub into your local copy of the repository</p>
 </li>
 <li>
 <p><strong>Pushing changes/committing changes</strong>: means “pushing” your code to a branch, and your changes will show up in that branch with an optional commit message that you enter</p>
@@ -218,21 +220,9 @@
 <li>
 <p><strong>Pull requests (PR)</strong>: a form you fill out with a quick description of your changes in the code</p>
 <ul>
+<li>Allows reviewers to check over your code to give you feedback and request any changes</li>
 <li>Once approved, your code will be merged to main</li>
 <li>Reviewers can post comments on the pull request to request changes/fixes to your code</li>
-</ul>
-</li>
-<li>
-<p><strong>General tips</strong>:</p>
-<ul>
-<li>Create a new branch with the naming format: FirstinitialLastinitial/task (if multiple names, hyphenate the initials)
-<ul>
-<li>Ex: ag-dt/speaker</li>
-<li>Make sure to make changes only on that branch, then create a pull request (PR) once you believe your changes are ready to be merged to main</li>
-</ul>
-</li>
-<li>Add Anoop as a reviewer and assign yourself + your partner on the PR/task</li>
-<li>Make sure to fill out the PR according to the PR template (and include any photos/testing that you did for the task)</li>
 </ul>
 </li>
 </ul>
@@ -272,7 +262,7 @@
 <li>
 <p>Here, you can create a new branch or select one that you’ve already made (if creating, type the new branch’s name in the box)</p>
 <ul>
-<li>If you create a new brach and publish it on VSCode, you will see the changes reflected on GitHub as well</li>
+<li>If you create a new branch and publish it on VSCode, you will see the changes reflected on GitHub as well</li>
 </ul>
 </li>
 </ul>
@@ -313,7 +303,7 @@
 <li>
 <p><strong>Pushing/Commiting changes</strong>: In the same source control section, you’ll see an empty box that says “Message…”</p>
 <ul>
-<li>This box is for your <strong>commit message</strong>, which explains what changes you made and why you made them
+<li>This box is for your <strong>commit message</strong>, which describes what changes you made at a glance
 <ul>
 <li>Ex: Create initial AER beginner guide pages documentation, Add GitHub pages workflow</li>
 <li>Message is supposed to make it easier to see which changes are associated with which commit</li>
@@ -325,15 +315,73 @@
 </ul>
 </li>
 </ul>
-<h2 id="how-to-create-a-pull-request"><a class="header" href="#how-to-create-a-pull-request">How to Create a Pull Request</a></h2>
+<h2 id="how-to-make-code-changes-and-create-a-pull-request"><a class="header" href="#how-to-make-code-changes-and-create-a-pull-request">How to Make Code Changes and Create a Pull Request</a></h2>
 <ul>
 <li>
-<p>Make sure you are making your changes in a branch that is NOT main (you shouldn’t be able to push your changes to main anyways)</p>
+<p>Create a new branch with the naming format: FirstinitialLastinitial/task (if multiple names, hyphenate the initials)
+- Ex: ag-dt/speaker</p>
 </li>
 <li>
-<p>Make any changes you want, and commit your changes to that branch</p>
+<p>Make sure you are making your changes in the branch you just created and NOT main (you shouldn’t be able to push your changes to main anyways)</p>
+<ul>
+<li>When you’re done with all of your changes, make sure to commit. Now you’re ready to open a Pull Request (PR)!</li>
+</ul>
+</li>
+<li>
+<p>Go back to GitHub: when you visit the repository, you should see a bright green button that says “Compare &amp; pull request”</p>
+<p><img src="images/create_pr.png" alt="create_pr"></p>
+</li>
+<li>
+<p>Fill out the PR according to the PR template (it should autopopulate, but if it doesn’t just check the PULL_REQUEST_TEMPLATE file)</p>
+<ul>
+<li>
+<p>Add Anoop as a reviewer and assign yourself + your partner on the PR/task</p>
+</li>
+<li>
+<p><strong>Note: The picture shown below is a PR in a different repository (not associated with AER) so the PR template doesn’t populate there</strong></p>
 </li>
 </ul>
+<p><img src="images/write_pr.png" alt="write_pr"></p>
+<ul>
+<li>
+<p>Create the PR, and shoot a DM to Anoop about it</p>
+</li>
+<li>
+<p>Wait until you get comments or until your changes are merged into main</p>
+</li>
+<li>
+<p>Once your changes are merged, make sure to go back and delete the branch you previously created (to reduce clutter)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="typical-git-workflow"><a class="header" href="#typical-git-workflow">Typical Git Workflow</a></h2>
+<ol>
+<li>
+<p>Pull the latest changes from main</p>
+</li>
+<li>
+<p>Create a new branch using the naming convention above</p>
+</li>
+<li>
+<p>Switch to that branch and make any changes to that code</p>
+</li>
+<li>
+<p>Commit your changes with a descriptive message</p>
+</li>
+<li>
+<p>Open a Pull Request + wait for your code to be reviewed</p>
+</li>
+<li>
+<p>Address any review comments and make changes if needed</p>
+</li>
+<li>
+<p>Once your code is merged to main, delete your branch</p>
+</li>
+<li>
+<p>Celebrate!</p>
+</li>
+</ol>
 <h2 id="general-embedded-info"><a class="header" href="#general-embedded-info">General Embedded Info</a></h2>
 <ul>
 <li>

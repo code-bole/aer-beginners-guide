@@ -1,30 +1,27 @@
 # Embedded Resources
 
+- ### [MegaZott's Embedded Repository](https://github.com/Anteater-Electric-Racing/embedded-mz)
 ## Git Basics
-- [MZ repository](https://github.com/Anteater-Electric-Racing/embedded-mz)
 
-- **Git**: a version control design system that lets us collaborate on code
-- We mainly use GitHub (which uses Git) to store all of our files
+- **Git**: a version control system that tracks changes to code and allows multiple people to collaborate on the same project
+
+- We mainly use GitHub (which is built around Git) to store all of our files
     - Allows us to see past changes, updated changes, and it’s easy to keep track of who changed what
 - **Repository (repo)**: think of it like a container to store all of our car related files
     - **Cloning a repository**: when you want to make changes to a repository in an IDE, you'll have to make a copy of that repository on your personal device (hence, cloning)
         - This allows you to make changes locally (on your device) before you publish those changes to GitHub for your collaborators to see
 - **Branches**: each repository has branches, and they allow you to make changes to code without changing the main source code
     - Each repo (by default) has a main branch, where the main source code is
-    - Every time you make a branch, the main source code is copied
+    - Each new branch starts from the current state of the branch it's created from (usually main)
     - You can make edits on the new branch and it won’t affect the code in the main branch, until you “merge” into main
     - Importance of branches: lets you change code without directly affecting the main code base, and is more easily undoable 
-- **Pulling changes**: allows you to “pull” changes from the repository and see the updates on your device
+- **Pulling changes**: downloads the latest changes from GitHub into your local copy of the repository
 - **Pushing changes/committing changes**: means “pushing” your code to a branch, and your changes will show up in that branch with an optional commit message that you enter
 - **Pull requests (PR)**: a form you fill out with a quick description of your changes in the code
+    - Allows reviewers to check over your code to give you feedback and request any changes
     - Once approved, your code will be merged to main
     - Reviewers can post comments on the pull request to request changes/fixes to your code
-- **General tips**:
-    - Create a new branch with the naming format: FirstinitialLastinitial/task (if multiple names, hyphenate the initials)
-        - Ex: ag-dt/speaker
-        - Make sure to make changes only on that branch, then create a pull request (PR) once you believe your changes are ready to be merged to main
-    - Add Anoop as a reviewer and assign yourself + your partner on the PR/task
-    - Make sure to fill out the PR according to the PR template (and include any photos/testing that you did for the task)
+    
 
 ## GitHub and VSCode
 - Sign in to GitHub through VSCode
@@ -52,7 +49,7 @@
         ![switch_branches_2](images/switch_branches_2.png)
 
     - Here, you can create a new branch or select one that you've already made (if creating, type the new branch's name in the box)
-        - If you create a new brach and publish it on VSCode, you will see the changes reflected on GitHub as well
+        - If you create a new branch and publish it on VSCode, you will see the changes reflected on GitHub as well
 
 - **Pushing and pulling changes**: 
     - **Pulling changes**: click on the branch split with circles icon in the left sidebar
@@ -72,15 +69,53 @@
 
     - **Pushing/Commiting changes**: In the same source control section, you'll see an empty box that says "Message..."
 
-        - This box is for your **commit message**, which explains what changes you made and why you made them
+        - This box is for your **commit message**, which describes what changes you made at a glance
             - Ex: Create initial AER beginner guide pages documentation, Add GitHub pages workflow
             - Message is supposed to make it easier to see which changes are associated with which commit
         - When you're done with your message, hit the "Commit" button, and then hit "Sync" to sync your changes to GitHub
 
-## How to Create a Pull Request
-- Make sure you are making your changes in a branch that is NOT main (you shouldn't be able to push your changes to main anyways)
+## How to Make Code Changes and Create a Pull Request
 
-- Make any changes you want, and commit your changes to that branch
+- Create a new branch with the naming format: FirstinitialLastinitial/task (if multiple names, hyphenate the initials)
+        - Ex: ag-dt/speaker
+
+- Make sure you are making your changes in the branch you just created and NOT main (you shouldn't be able to push your changes to main anyways)
+    - When you're done with all of your changes, make sure to commit. Now you're ready to open a Pull Request (PR)!
+
+- Go back to GitHub: when you visit the repository, you should see a bright green button that says "Compare & pull request"
+
+    ![create_pr](images/create_pr.png)
+
+- Fill out the PR according to the PR template (it should autopopulate, but if it doesn't just check the PULL_REQUEST_TEMPLATE file)
+    - Add Anoop as a reviewer and assign yourself + your partner on the PR/task
+
+    - **Note: The picture shown below is a PR in a different repository (not associated with AER) so the PR template doesn't populate there**
+    
+    ![write_pr](images/write_pr.png)
+
+    - Create the PR, and shoot a DM to Anoop about it
+
+    - Wait until you get comments or until your changes are merged into main
+
+    - Once your changes are merged, make sure to go back and delete the branch you previously created (to reduce clutter)
+
+## Typical Git Workflow
+1. Pull the latest changes from main
+
+2. Create a new branch using the naming convention above
+
+3. Switch to that branch and make any changes to that code
+
+4. Commit your changes with a descriptive message
+
+5. Open a Pull Request + wait for your code to be reviewed
+
+6. Address any review comments and make changes if needed
+
+7. Once your code is merged to main, delete your branch
+
+8. Celebrate!
+
 
 ## General Embedded Info
 - At the end of each quarter, we’re all required to update our embedded documentation for whatever we worked on in [this repo](https://github.com/Anteater-Electric-Racing/aer-documentation)
