@@ -1,4 +1,4 @@
-# Anushree's AER Resources
+# AER Resources
 
 <p align="center">
   <img src="images/aer_logo.png" alt="Anteater Electric Racing Logo" width="450">

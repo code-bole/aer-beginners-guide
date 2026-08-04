@@ -1,4 +1,4 @@
-# Anushree's PCB Tips
+# PCB Tips
 - I recommend just picking a board (RTM, BSPD, CCM, etc) and just diving right in → no better way to figure stuff out than looking through the schematic for yourself
     - Learn the acronyms for the boards and what they stand for (you’re going to be hearing them A LOT)
 
