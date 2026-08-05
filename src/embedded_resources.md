@@ -1,6 +1,7 @@
 # Embedded Resources
 
 - ### [MegaZott's Embedded Repository](https://github.com/Anteater-Electric-Racing/embedded-mz)
+
 ## Git Basics
 
 - **Git**: a version control system that tracks changes to code and allows multiple people to collaborate on the same project
